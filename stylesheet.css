@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #003f5c;
+  border-radius: 10px;
+  color: azure;
+  margin: 20px;
+  padding: 10px;
+  width: 75%;
+}
+
+#calculator {
+  margin-top: 30px;
+}
+
+.error {
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+}
+
+#noBillAmount,
+#noPeople,
+#noTipValue,
+#results {
+  display: none;
+}
+
+form {
+  border-radius: 10px;
+  border: black 3px solid;
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
+  width: 75%;
+}
+
+h1 {
+  background-color: #131313;
+  color: azure;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto 20px;
+  padding: 10px;
+  text-align: center;
+  width: 75%;
+}
+
+.result {
+  margin: 10px;
+}
+
+.result span {
+  font-size: 150%;
+}

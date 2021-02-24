@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>TIP Calculator</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <form>
+        <h1>TIP CALCULATOR</h1>
+        <div>
+          <label for="billAmount">How Much Was Your Bill ?</label>
+          <input type="number" name="billAmount" id="billAmount" />
+        </div>
+        <div>
+          <label for="numberOfPeople">How Many People Sharing The Bill ?</label>
+          <input type="number" name="numberOfPeople" id="numberOfPeople" />
+        </div>
+        <div>
+          <label for="tipValue">How Much Would You Like To Give ?</label>
+          <input
+            list="options"
+            name="tipValue"
+            id="tipValue"
+            placeholder="Choose the value"
+          />
+          <datalist id="options">
+            <option value="20%"></option>
+            <option value="10%"></option>
+            <option value="5%"></option>
+            <option value="2%"></option>
+          </datalist>
+        </div>
+        <div id="errors">
+          <div class="error" id="noBillAmount">Bill Amount Cannot Be Blank</div>
+          <div class="error" id="noPeople">
+            Number Of Users Must Be Greater Than Zero
+          </div>
+          <div class="error" id="noTipValue">You Must Select A Tip Value</div>
+        </div>
+
+        <button id="calculate">CALCULATE</button>
+
+        <div id="results">
+          <div class="result">Tip Amount: <span id="tipAmount">1.00</span></div>
+          <div class="result">
+            Total Amount: <span id="totalAmount">6.00</span>
+          </div>
+          <div class="result">
+            Each Person Owes: <span id="eachPersonAmount">1.50</span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
